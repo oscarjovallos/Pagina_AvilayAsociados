@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avila & Asociados Abogados | Santa Marta, Colombia</title>
+  <meta name="description" content="Firma jurídica de alto nivel en Santa Marta. Asesoría legal en Derecho Civil, Penal, Laboral y Administrativo. Confianza, ética y resultados.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo.jpg">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#inicio" class="nav-logo">
+    <span class="nav-logo-main">Avila & Asociados</span>
+    <span class="nav-logo-sub">Abogados · Santa Marta</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#empresarial">Empresarial</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#equipo">Equipo</a></li>
+    <li><a href="#testimonios">Clientes</a></li>
+    <li><a href="#contacto" class="nav-cta">Consulta gratis</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MENÚ MÓVIL -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#inicio"      onclick="closeMobile()">Inicio</a>
+  <a href="#servicios"   onclick="closeMobile()">Servicios</a>
+  <a href="#empresarial" onclick="closeMobile()">Empresarial</a>
+  <a href="#nosotros"    onclick="closeMobile()">Nosotros</a>
+  <a href="#equipo"      onclick="closeMobile()">Equipo</a>
+  <a href="#testimonios" onclick="closeMobile()">Clientes</a>
+  <a href="#contacto"    onclick="closeMobile()">Contacto</a>
+</div>
+
+<!-- HERO -->
+<section id="inicio" class="hero-section">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-accent"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
+      <div class="hero-badge-dot"></div>
+      <span>Firma Jurídica · Santa Marta, Colombia</span>
+    </div>
+    <h1 class="display-title hero-title" data-aos="fade-up" data-aos-delay="200">
+      Defendemos<br>tus <em>derechos</em><br>con rigor.
+    </h1>
+    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="350">
+      Asesoría jurídica integral con ética, compromiso y experiencia. Soluciones legales efectivas para personas y empresas en el Caribe colombiano.
+    </p>
+    <div class="hero-actions" data-aos="fade-up" data-aos-delay="450">
+      <a href="https://api.whatsapp.com/message/NNACI7FQ3ROXK1?autoload=1&app_absent=0" class="btn-primary" target="_blank" rel="noopener">
+        <i class="bi bi-whatsapp"></i> Consulta gratuita
+      </a>
+      <a href="#servicios" class="btn-outline">
+        Nuestros servicios <i class="bi bi-arrow-down"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-divider"></div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <i class="bi bi-chevron-down"></i>
+  </div>
+</section>
+
+<!-- ESTADÍSTICAS -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+      <div class="stat-number">+10</div>
+      <div class="stat-label">Años de experiencia</div>
+    </div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+      <div class="stat-number">+500</div>
+      <div class="stat-label">Casos resueltos</div>
+    </div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+      <div class="stat-number">90%</div>
+      <div class="stat-label">Clientes satisfechos</div>
+    </div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+      <div class="stat-number">6</div>
+      <div class="stat-label">Áreas de práctica</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS PERSONAS -->
+<section id="servicios" class="section">
+  <div class="section-inner">
+    <div class="section-header centered" data-aos="fade-up">
+      <div class="ornament" style="justify-content:center">
+        <span class="section-label">Portafolio de servicios</span>
+      </div>
+      <div class="gold-divider centered"></div>
+      <h2 class="section-title" style="font-size:clamp(2rem,4vw,3rem);color:var(--navy-800);">
+        Servicios para <em style="font-style:italic;color:var(--gold-600);">personas</em>
+      </h2>
+      <p style="color:var(--text-muted);font-size:0.95rem;margin-top:1rem;max-width:560px;margin-left:auto;margin-right:auto;">
+        Asesoría jurídica integral para proteger sus derechos, su familia y su patrimonio.
+      </p>
+    </div>
+
+    <div class="services-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="service-card">
+        <span class="service-number">01</span>
+        <div class="service-icon"><i class="bi bi-chat-dots"></i></div>
+        <h3 class="service-name">Asesorías y Consultas Jurídicas</h3>
+        <p class="service-desc">Consultas jurídicas integrales y representación en diligencias judiciales. Audiencias de conciliación ante centros autorizados. Lo orientamos en cada etapa de su proceso.</p>
+        <a href="#contacto" class="service-link">Consultar <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card">
+        <span class="service-number">02</span>
+        <div class="service-icon"><i class="bi bi-file-earmark-medical"></i></div>
+        <h3 class="service-name">Tutelas, Peticiones y Reclamaciones</h3>
+        <p class="service-desc">Derecho de Petición, Acción de Tutela y reclamaciones ante entidades públicas y privadas. Protegemos sus derechos fundamentales con diligencia y eficacia.</p>
+        <a href="#contacto" class="service-link">Consultar <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card">
+        <span class="service-number">03</span>
+        <div class="service-icon"><i class="bi bi-briefcase"></i></div>
+        <h3 class="service-name">Derecho Laboral y Pensional</h3>
+        <p class="service-desc">Demandas laborales y administrativas, reportes en centrales de riesgo, reconocimiento y pago de pensiones. Defendemos a trabajadores con rigor y experiencia.</p>
+        <a href="#contacto" class="service-link">Consultar <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card">
+        <span class="service-number">04</span>
+        <div class="service-icon"><i class="bi bi-people"></i></div>
+        <h3 class="service-name">Derecho de Familia</h3>
+        <p class="service-desc">Divorcios, custodia, fijación y ofrecimiento de cuota alimentaria, regulación de visitas a menores de edad. Soluciones jurídicas con sensibilidad humana.</p>
+        <a href="#contacto" class="service-link">Consultar <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card">
+        <span class="service-number">05</span>
+        <div class="service-icon"><i class="bi bi-house-door"></i></div>
+        <h3 class="service-name">Contratos e Inmuebles</h3>
+        <p class="service-desc">Revisión y proyección de contratos, gestión y publicidad de compraventa de bienes muebles e inmuebles. Temas comerciales, societarios y contractuales.</p>
+        <a href="#contacto" class="service-link">Consultar <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card">
+        <span class="service-number">06</span>
+        <div class="service-icon"><i class="bi bi-bank"></i></div>
+        <h3 class="service-name">Derecho Administrativo</h3>
+        <p class="service-desc">Contratación estatal, nulidades, reparación directa y litigios contra el Estado. Amplia experiencia ante el Consejo de Estado y tribunales administrativos del país.</p>
+        <a href="#contacto" class="service-link">Consultar <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS EMPRESARIALES -->
+<section id="empresarial" class="section empresarial-section">
+  <div class="empresarial-bg"></div>
+  <div class="section-inner" style="position:relative;z-index:1;">
+
+    <div class="section-header centered" data-aos="fade-up">
+      <div class="ornament" style="justify-content:center;">
+        <span class="section-label" style="color:var(--gold-300);">Servicios empresariales</span>
+      </div>
+      <div class="gold-divider centered"></div>
+      <h2 class="section-title" style="font-size:clamp(2rem,4vw,3rem);color:var(--white);">
+        Su mejor aliado para la<br>gestión de su <em style="color:var(--gold-300);">empresa</em>
+      </h2>
+      <p style="color:rgba(255,255,255,0.5);font-size:0.95rem;margin-top:1rem;max-width:560px;margin-left:auto;margin-right:auto;">
+        Soluciones jurídicas y contables integrales para empresas de todos los sectores.
+      </p>
+    </div>
+
+    <div class="emp-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="emp-card">
+        <div class="emp-icon"><i class="bi bi-file-earmark-check"></i></div>
+        <h3 class="emp-name">Contratos y Normativa</h3>
+        <p class="emp-desc">Redacción y revisión de contratos. Asesoría en cumplimiento de normativas. Elaboración de reglamentos internos de trabajo.</p>
+      </div>
+
+      <div class="emp-card">
+        <div class="emp-icon"><i class="bi bi-people-fill"></i></div>
+        <h3 class="emp-name">Gestión Laboral</h3>
+        <p class="emp-desc">Charlas sobre asuntos laborales. Asesoría en procesos disciplinarios. Gestión de aportes a la seguridad social para su nómina.</p>
+      </div>
+
+      <div class="emp-card">
+        <div class="emp-icon"><i class="bi bi-cash-stack"></i></div>
+        <h3 class="emp-name">Recuperación de Cartera</h3>
+        <p class="emp-desc">Recuperación de cartera. Reclamación ante empresas de servicios públicos. Gestión de cobro jurídico y extrajurídico.</p>
+      </div>
+
+      <div class="emp-card">
+        <div class="emp-icon"><i class="bi bi-shield-lock"></i></div>
+        <h3 class="emp-name">Defensa Judicial</h3>
+        <p class="emp-desc">Representación y defensa en procesos judiciales. Conciliaciones. Representación ante entidades del Estado y tribunales.</p>
+      </div>
+
+      <div class="emp-card">
+        <div class="emp-icon"><i class="bi bi-calculator"></i></div>
+        <h3 class="emp-name">Servicios Contables</h3>
+        <p class="emp-desc">Servicios contables externos. Cumplimiento tributario, declaraciones y reportes ante entidades de control.</p>
+      </div>
+
+    </div>
+
+    <div class="emp-cta" data-aos="fade-up" data-aos-delay="200">
+      <div class="emp-quote">
+        <p>"Somos tu mejor aliado para la buena gestión de tu empresa"</p>
+        <span>Avila & Asociados Abogados</span>
+      </div>
+      <a href="#contacto" class="btn-primary">
+        <i class="bi bi-building"></i> Consulta empresarial gratuita
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="section">
+  <div class="section-inner">
+    <div class="about-grid">
+
+      <div class="about-image-wrap" data-aos="fade-right">
+        <div class="about-image-placeholder"
+             style="background: linear-gradient(rgba(20,40,80,0.35), rgba(20,40,80,0.35)), url('imagenes/Foto de Nosotros.jpg') center/cover no-repeat;">
+        </div>
+        <div class="about-image-overlay">
+          <div class="about-overlay-num">10+</div>
+          <div class="about-overlay-text">Años de trayectoria</div>
+        </div>
+        <div class="about-image-frame"></div>
+      </div>
+
+      <div class="about-text" data-aos="fade-left" data-aos-delay="150">
+        <div class="ornament">
+          <span class="section-label">Quiénes somos</span>
+        </div>
+        <div class="gold-divider"></div>
+        <h2 class="section-title" style="font-size:clamp(2rem,4vw,3rem);color:var(--navy-800);margin-bottom:1.5rem;">
+          Una firma construida<br>sobre <em>confianza</em> y resultados.
+        </h2>
+        <p class="about-lead">
+          En Avila & Asociados ofrecemos asesoría jurídica integral con un enfoque riguroso, ético y orientado al cliente. Somos la firma de referencia en el Caribe colombiano para quienes necesitan representación legal de alto nivel.
+        </p>
+        <p class="about-body">
+          Fundada en Santa Marta, nuestra firma ha construido una reputación sólida a lo largo de más de 10 años de ejercicio profesional. Cada caso es tratado con máxima dedicación, combinando el conocimiento profundo de la normativa colombiana con una estrategia jurídica personalizada.
+        </p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-icon"><i class="bi bi-award"></i></div>
+            <div class="pillar-text"><strong>Excelencia</strong><span>Estándares internacionales de práctica legal</span></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i class="bi bi-eye"></i></div>
+            <div class="pillar-text"><strong>Transparencia</strong><span>Comunicación clara y honesta en todo momento</span></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i class="bi bi-people"></i></div>
+            <div class="pillar-text"><strong>Compromiso</strong><span>Dedicación total a los intereses del cliente</span></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i class="bi bi-lock"></i></div>
+            <div class="pillar-text"><strong>Confidencialidad</strong><span>Absoluta reserva y discreción profesional</span></div>
+          </div>
+        </div>
+        <a href="#contacto" class="btn-dark">
+          Agendar consulta <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPO -->
+<section id="equipo" class="section equipo-section">
+  <div class="section-inner">
+    <div class="section-header centered" data-aos="fade-up">
+      <div class="ornament" style="justify-content:center;">
+        <span class="section-label" style="color:var(--gold-300)">Nuestro equipo</span>
+      </div>
+      <div class="gold-divider centered"></div>
+      <h2 class="section-title" style="font-size:clamp(2rem,4vw,3rem);color:var(--white);">
+        Abogados con <em style="color:var(--gold-300)">propósito</em>
+      </h2>
+      <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:1rem;max-width:500px;margin-left:auto;margin-right:auto;">
+        Profesionales del derecho con formación de alto nivel y vocación de servicio al cliente.
+      </p>
+    </div>
+
+    <!-- SOCIO FUNDADOR -->
+    <p style="font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold-400);margin-bottom:1.5rem;text-align:center;" data-aos="fade-up">Socio Fundador</p>
+    <div class="team-grid" style="grid-template-columns:repeat(1,360px);justify-content:center;margin-bottom:3rem;">
+      <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-photo-placeholder"><i class="bi bi-person-fill"></i></div>
+        <div class="team-info">
+          <div class="team-name">Dr. Carlos Andrés Avila Sanjuanelo</div>
+          <div class="team-role">Socio Fundador · Derecho Civil & Administrativo</div>
+          <div class="team-bio">Abogado, Especialista en Derecho Administrativo, Técnico en Investigación Judicial, Auditor en Sistemas Integrados de Gestión y diplomados en varias áreas del Derecho.</div>
+          <div class="team-social">
+            <a href="mailto:carlosavilayasociados@hotmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOCIOS -->
+    <p style="font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold-400);margin-bottom:1.5rem;text-align:center;" data-aos="fade-up">Socios</p>
+    <div class="team-grid" style="margin-bottom:3rem;">
+      <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-photo-placeholder"><i class="bi bi-person-fill"></i></div>
+        <div class="team-info">
+          <div class="team-name">Dra. Andrea Patricia Ochoa Domínguez</div>
+          <div class="team-role">Socia · Derecho Laboral & Seguridad Social</div>
+          <div class="team-bio">Especialista en Derecho Laboral y Seguridad Social. Amplia experiencia en litigación laboral, procesos disciplinarios y representación ante tribunales.</div>
+          <div class="team-social">
+            <a href="mailto:carlosavilayasociados@hotmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-photo-placeholder"><i class="bi bi-person-fill"></i></div>
+        <div class="team-info">
+          <div class="team-name">Dra. Andrea Fernández Gómez</div>
+          <div class="team-role">Socia · Derecho de Familia & Civil</div>
+          <div class="team-bio">Especialista en derecho de familia, civil y comercial. Experiencia en procesos de familia, contratos y asesoría a personas naturales y empresas.</div>
+          <div class="team-social">
+            <a href="mailto:carlosavilayasociados@hotmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-photo-placeholder"><i class="bi bi-person-fill"></i></div>
+        <div class="team-info">
+          <div class="team-name">Dr. Juan Carlos Monsalve</div>
+          <div class="team-role">Socio · Derecho Penal & Administrativo</div>
+          <div class="team-bio">Abogado con amplia trayectoria en derecho penal y administrativo. Representación técnica ante tribunales y juzgados del Caribe colombiano.</div>
+          <div class="team-social">
+            <a href="mailto:carlosavilayasociados@hotmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ALIADOS Y DEPENDIENTE -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:800px;margin:0 auto;" data-aos="fade-up">
+
+      <!-- ALIADOS -->
+      <div>
+        <p style="font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold-400);margin-bottom:1.5rem;text-align:center;">Aliados</p>
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+
+          <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(196,154,46,0.15);border-radius:2px;padding:1.5rem;display:flex;align-items:center;gap:1rem;transition:all 0.3s ease;" onmouseover="this.style.borderColor='rgba(196,154,46,0.35)';this.style.background='rgba(196,154,46,0.06)'" onmouseout="this.style.borderColor='rgba(196,154,46,0.15)';this.style.background='rgba(255,255,255,0.04)'">
+            <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--navy-600),var(--navy-800));display:flex;align-items:center;justify-content:center;color:var(--gold-300);font-family:var(--font-display);font-size:1.1rem;flex-shrink:0;">JJ</div>
+            <div>
+              <div style="font-family:var(--font-display);font-size:1.1rem;color:var(--white);font-weight:400;">Jesús Jiménez</div>
+              <div style="font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-300);">Aliado estratégico</div>
+            </div>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(196,154,46,0.15);border-radius:2px;padding:1.5rem;display:flex;align-items:center;gap:1rem;transition:all 0.3s ease;" onmouseover="this.style.borderColor='rgba(196,154,46,0.35)';this.style.background='rgba(196,154,46,0.06)'" onmouseout="this.style.borderColor='rgba(196,154,46,0.15)';this.style.background='rgba(255,255,255,0.04)'">
+            <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--navy-600),var(--navy-800));display:flex;align-items:center;justify-content:center;color:var(--gold-300);font-family:var(--font-display);font-size:1.1rem;flex-shrink:0;">MM</div>
+            <div>
+              <div style="font-family:var(--font-display);font-size:1.1rem;color:var(--white);font-weight:400;">Melvis Montero</div>
+              <div style="font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-300);">Aliada estratégica</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DEPENDIENTE JUDICIAL -->
+      <div>
+        <p style="font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold-400);margin-bottom:1.5rem;text-align:center;">Dependiente Judicial</p>
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+
+          <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(196,154,46,0.15);border-radius:2px;padding:1.5rem;display:flex;align-items:center;gap:1rem;transition:all 0.3s ease;" onmouseover="this.style.borderColor='rgba(196,154,46,0.35)';this.style.background='rgba(196,154,46,0.06)'" onmouseout="this.style.borderColor='rgba(196,154,46,0.15)';this.style.background='rgba(255,255,255,0.04)'">
+            <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--navy-600),var(--navy-800));display:flex;align-items:center;justify-content:center;color:var(--gold-300);font-family:var(--font-display);font-size:1.1rem;flex-shrink:0;">DO</div>
+            <div>
+              <div style="font-family:var(--font-display);font-size:1.1rem;color:var(--white);font-weight:400;">Danna Ochoa Domínguez</div>
+              <div style="font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-300);">Dependiente Judicial</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <p style="text-align:center;color:rgba(255,255,255,0.3);font-size:0.75rem;margin-top:2.5rem;letter-spacing:0.08em;">
+      * Las fotos del equipo serán actualizadas próximamente.
+    </p>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios" class="section" style="background:var(--ivory);">
+  <div class="section-inner">
+    <div class="section-header centered" data-aos="fade-up">
+      <div class="ornament" style="justify-content:center;">
+        <span class="section-label">Testimonios</span>
+      </div>
+      <div class="gold-divider centered"></div>
+      <h2 class="section-title" style="font-size:clamp(2rem,4vw,3rem);color:var(--navy-800);">
+        Lo que dicen<br>nuestros <em style="color:var(--gold-600)">clientes</em>
+      </h2>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+        <span class="testimonial-quote">"</span>
+        <p class="testimonial-text">El equipo de Avila & Asociados manejó mi caso laboral con una profesionalidad impresionante. Recuperé lo que me correspondía y en tiempo récord. Los recomiendo completamente.</p>
+        <div class="testimonial-rating">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </div>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JR</div>
+          <div>
+            <div class="testimonial-author-name">Jorge Rodríguez</div>
+            <div class="testimonial-author-case">Caso · Derecho Laboral</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+        <span class="testimonial-quote">"</span>
+        <p class="testimonial-text">Gracias a la Dra. Andrea Ochoa, mi situación laboral se resolvió favorablemente. Su conocimiento es extraordinario y sentí respaldo en todo momento. Muy recomendados.</p>
+        <div class="testimonial-rating">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </div>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">LP</div>
+          <div>
+            <div class="testimonial-author-name">Luisa Palomino</div>
+            <div class="testimonial-author-case">Caso · Derecho Laboral</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+        <span class="testimonial-quote">"</span>
+        <p class="testimonial-text">Como empresa necesitábamos orientación en contratación estatal. Avila & Asociados nos guió en cada paso y ganamos el proceso. Son los mejores de Santa Marta.</p>
+        <div class="testimonial-rating">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+        </div>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">CM</div>
+          <div>
+            <div class="testimonial-author-name">Constructora Medellín S.A.</div>
+            <div class="testimonial-author-case">Caso · Contratación Estatal</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section" style="background:var(--white);">
+  <div class="section-inner">
+    <div class="contact-grid">
+
+      <div class="contact-info" data-aos="fade-right">
+        <div class="ornament">
+          <span class="section-label">Contacto</span>
+        </div>
+        <div class="gold-divider"></div>
+        <h2 class="section-title" style="font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--navy-800);margin-bottom:1rem;">
+          Hablemos de<br>su <em style="color:var(--gold-600)">caso</em>
+        </h2>
+        <p class="contact-tagline">
+          La primera consulta es <strong>gratuita y confidencial</strong>. Cuéntenos su situación y nuestro equipo le brindará orientación jurídica inmediata.
+        </p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="bi bi-whatsapp"></i></div>
+            <div>
+              <div class="contact-item-label">WhatsApp</div>
+              <a href="https://api.whatsapp.com/message/NNACI7FQ3ROXK1?autoload=1&app_absent=0" class="contact-item-value" target="_blank">Escribir ahora →</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="bi bi-telephone"></i></div>
+            <div>
+              <div class="contact-item-label">Teléfono</div>
+              <a href="tel:+573045719954" class="contact-item-value">+57 304 571 9954</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="bi bi-envelope"></i></div>
+            <div>
+              <div class="contact-item-label">Correo electrónico</div>
+              <a href="https://mail.google.com/mail/?view=cm&to=carlosavilayasociados@hotmail.com&su=Consulta%20Jurídica%20-%20Avila%20%26%20Asociados&body=Buenos%20días,%20me%20comunico%20para%20solicitar%20información%20sobre..." class="contact-item-value" target="_blank" rel="noopener">carlosavilayasociados@hotmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="bi bi-geo-alt"></i></div>
+            <div>
+              <div class="contact-item-label">Oficina</div>
+              <span class="contact-item-value" style="cursor:default;">Santa Marta, Magdalena, Colombia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap" data-aos="fade-left" data-aos-delay="150">
+        <div id="contactForm">
+          <h3 class="form-title">Envíenos su consulta</h3>
+          <p class="form-subtitle">Respondemos en menos de 24 horas hábiles</p>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" class="form-control" placeholder="Su nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono / WhatsApp</label>
+              <input type="tel" id="telefono" class="form-control" placeholder="+57 300...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" class="form-control" placeholder="correo@ejemplo.com" required>
+          </div>
+          <div class="form-group">
+            <label for="area">Servicio requerido</label>
+            <select id="area" class="form-control">
+              <option value="" disabled selected>Seleccione el servicio...</option>
+              <option>Asesoría y Consulta Jurídica</option>
+              <option>Representación en Diligencias Judiciales</option>
+              <option>Audiencia de Conciliación</option>
+              <option>Derecho de Petición</option>
+              <option>Acción de Tutela</option>
+              <option>Reclamación ante Entidad Pública o Privada</option>
+              <option>Reporte en Centrales de Riesgo</option>
+              <option>Revisión o Proyección de Contratos</option>
+              <option>Divorcio</option>
+              <option>Cuota Alimentaria / Regulación de Visitas</option>
+              <option>Reconocimiento y Pago de Pensión</option>
+              <option>Demanda Laboral o Administrativa</option>
+              <option>Compraventa de Bienes Muebles o Inmuebles</option>
+              <option>Servicios Empresariales</option>
+              <option>Otro / No sé</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Descripción breve del caso</label>
+            <textarea id="mensaje" class="form-control" placeholder="Cuéntenos brevemente su situación..." required></textarea>
+          </div>
+          <button type="button" class="form-submit" onclick="submitForm()">
+            <i class="bi bi-whatsapp"></i> Enviar por WhatsApp
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<div class="whatsapp-float">
+  <div class="whatsapp-tooltip">💬 Consulta gratis por WhatsApp</div>
+  <a href="https://api.whatsapp.com/message/NNACI7FQ3ROXK1?autoload=1&app_absent=0" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+
+    <div class="footer-brand">
+      <a href="#inicio" class="nav-logo" style="display:inline-flex;margin-bottom:1rem;">
+        <span class="nav-logo-main" style="font-size:1.4rem;">Avila & Asociados</span>
+        <span class="nav-logo-sub">Abogados · Santa Marta</span>
+      </a>
+      <p class="footer-tagline">
+        Firma jurídica de alto nivel en el Caribe colombiano. Comprometidos con la justicia, la ética y los resultados de nuestros clientes.
+      </p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/avila_asociadosabogados/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://api.whatsapp.com/message/NNACI7FQ3ROXK1?autoload=1&app_absent=0" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Servicios</div>
+      <ul class="footer-links">
+        <li><a href="#servicios"><i class="bi bi-chevron-right"></i>Asesorías y Consultas</a></li>
+        <li><a href="#servicios"><i class="bi bi-chevron-right"></i>Tutelas y Peticiones</a></li>
+        <li><a href="#servicios"><i class="bi bi-chevron-right"></i>Derecho Laboral</a></li>
+        <li><a href="#servicios"><i class="bi bi-chevron-right"></i>Derecho de Familia</a></li>
+        <li><a href="#empresarial"><i class="bi bi-chevron-right"></i>Servicios Empresariales</a></li>
+        <li><a href="#servicios"><i class="bi bi-chevron-right"></i>Derecho Administrativo</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Firma</div>
+      <ul class="footer-links">
+        <li><a href="#nosotros"><i class="bi bi-chevron-right"></i>Sobre nosotros</a></li>
+        <li><a href="#equipo"><i class="bi bi-chevron-right"></i>Nuestro equipo</a></li>
+        <li><a href="#testimonios"><i class="bi bi-chevron-right"></i>Testimonios</a></li>
+        <li><a href="#contacto"><i class="bi bi-chevron-right"></i>Contacto</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Contacto</div>
+      <div class="footer-contact-item">
+        <i class="bi bi-geo-alt"></i>
+        <span>Santa Marta, Magdalena<br>Colombia</span>
+      </div>
+      <div class="footer-contact-item">
+        <i class="bi bi-telephone"></i>
+        <span>+57 304 571 9954</span>
+      </div>
+      <div class="footer-contact-item">
+        <i class="bi bi-envelope"></i>
+        <span>carlosavilayasociados@hotmail.com</span>
+      </div>
+      <div class="footer-contact-item">
+        <i class="bi bi-clock"></i>
+        <span>Lun – Vie: 8:00am – 6:00pm<br>Sáb: 8:00am – 12:00pm</span>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Avila & Asociados Abogados. Todos los derechos reservados.</div>
+    <div class="footer-legal">
+      <a href="#">Política de privacidad</a>
+      <a href="#">Términos de uso</a>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
