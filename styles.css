@@ -319,9 +319,10 @@ footer { background: var(--navy-950); padding: 5rem 5% 2rem; border-top: 1px sol
   /* HERO */
   .hero-accent { display: none; }
   .hero-section {
-    min-height: unset;
-    height: auto;
+    min-height: 0 !important;
+    height: auto !important;
     padding-bottom: 3rem;
+    align-items: flex-start;
   }
   .hero-content { padding: 110px 6% 2rem; max-width: 100%; }
   .hero-title { font-size: 2.8rem; line-height: 1.05; }
