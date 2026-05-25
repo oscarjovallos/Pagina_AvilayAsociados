@@ -73,9 +73,13 @@ ${mensaje}
 
 _Mensaje enviado desde el sitio web._`;
 
-  // Número de WhatsApp de la firma
+  // Detectar si es móvil para usar el link correcto
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   const numero = '573045719954';
-  const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+  const encodedText = encodeURIComponent(texto);
+  const url = isMobile
+    ? `whatsapp://send?phone=${numero}&text=${encodedText}`
+    : `https://web.whatsapp.com/send?phone=${numero}&text=${encodedText}`;
 
   // Abrir WhatsApp directamente
   window.open(url, '_blank');
