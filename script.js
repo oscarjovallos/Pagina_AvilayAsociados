@@ -73,16 +73,14 @@ ${mensaje}
 
 _Mensaje enviado desde el sitio web._`;
 
-  // Detectar si es móvil para usar el link correcto
-  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  // Link universal wa.me: funciona igual en Android, iOS y desktop,
+  // sin necesidad de detectar el dispositivo ni usar esquemas custom (whatsapp://)
   const numero = '573045719954';
-  const encodedText = encodeURIComponent(texto);
-  const url = isMobile
-    ? `whatsapp://send?phone=${numero}&text=${encodedText}`
-    : `https://web.whatsapp.com/send?phone=${numero}&text=${encodedText}`;
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
-  // Abrir WhatsApp directamente
-  window.open(url, '_blank');
+  // location.href en vez de window.open: en Android, abrir esquemas/links
+  // de apps externas desde window.open() suele fallar o quedar bloqueado
+  window.location.href = url;
 
   // Limpiar el formulario
   document.getElementById('nombre').value = '';
