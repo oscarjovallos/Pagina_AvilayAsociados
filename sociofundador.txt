@@ -1,0 +1,19 @@
+    <!-- SOCIO FUNDADOR -->
+    <p style="font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold-400);margin-bottom:1.5rem;text-align:center;" data-aos="fade-up">Socio Fundador</p>
+    <div class="team-grid" style="grid-template-columns:repeat(1,360px);justify-content:center;margin-bottom:3rem;">
+      <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-photo-placeholder">
+          <img src="imagenes/fotoPerfilAndreOchoa.jpeg" alt="Andrea" class="team-photo">
+        </div>
+        <div class="team-info">
+          <div class="team-name">Dr. Carlos Andrés Avila Sanjuanelo</div>
+          <div class="team-role">Socio Fundador · Derecho Civil & Administrativo</div>
+          <div class="team-bio">Abogado, Especialista en Derecho Administrativo, Técnico en Investigación Judicial, Auditor en Sistemas Integrados de Gestión y diplomados en varias áreas del Derecho.</div>
+          <div class="team-social">
+            <a href="mailto:carlosavilayasociados@hotmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
