@@ -141,7 +141,7 @@ body { font-family: var(--font-body); color: var(--text-primary); background: va
 /* SECCIÓN EMPRESARIAL */
 .empresarial-section { background: var(--navy-900); position: relative; overflow: hidden; }
 .empresarial-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(196,154,46,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(196,154,46,0.04) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
-.emp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
+.emp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 800px; margin: 0 auto 3rem; }
 .emp-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(196,154,46,0.15); border-radius: 2px; padding: 2rem; transition: var(--transition); }
 .emp-card:hover { background: rgba(196,154,46,0.08); border-color: rgba(196,154,46,0.35); transform: translateY(-3px); }
 .emp-icon { width: 44px; height: 44px; border: 1px solid rgba(196,154,46,0.3); border-radius: 2px; display: flex; align-items: center; justify-content: center; color: var(--gold-400); font-size: 1.1rem; margin-bottom: 1.2rem; transition: var(--transition); }
@@ -362,7 +362,7 @@ footer { background: var(--navy-950); padding: 5rem 5% 2rem; border-top: 1px sol
   .service-card { padding: 2rem 1.5rem; }
 
   /* EMPRESARIAL */
-  .emp-grid { grid-template-columns: 1fr; }
+  .emp-grid { grid-template-columns: 1fr; max-width: 400px; }
   .emp-quote { padding: 1.2rem 1.5rem; }
   .emp-quote p { font-size: 1.1rem; }
 
